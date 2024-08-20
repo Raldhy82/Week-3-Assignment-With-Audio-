@@ -1,4 +1,3 @@
-//same cod as last asingment
 function log()
 {
 const Firstname = document.getElementById("Firstname") .value;
@@ -7,22 +6,25 @@ const Password = document.getElementById("Password") .value;
 const Zipcode = document.getElementById("Zipcode"). value;
 const fullname = Firstname= " " = Lastname;
 
-
-if (fullname. value === " " || fullmane.value == null){
+//if nothing is entered in the name tab, a message would appear
+if (fullname. value === " " || fullname. value == null){
       document.getElementById("Acount Validation").innerHTML = "Need first and Last";
     }
-      if (fullname. value.lenght >=2 || fullmane.value.lenght <=20){
+      //if the name is under 2 characters or over 20 a message would appear 
+      if (fullname. value. length >=2 || fullname.value.length <=20){
       document.getElementById("Acount Validation").innerHTML = "First and last to long";
     }
-
-        if (Zipcode.lenght <=4){
+            //if the zip code isn't of the right numerical digits  a message would appear 
+        if (Zipcode. length <=4){
       document.getElementById("Acount Validation").innerHTML = "Zipcode invalided";
        }
-          if(Password.value.lenght <=6)
+      //if the password isn't of the right numerical digits  a message would appear
+          if(Password.value.length <=6)
     {
       document.getElementById("Acount Validation").innerHTML = "Password to short";
     }
-            if(Password.value.lenght >=20){
+        //if the password isn't of the right numerical digits  a message would appear
+            if(Password.value.length >=20){
     document.getElementById("Acount Validation").innerHTML = "Password to long";
     }
 else
