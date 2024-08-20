@@ -1,4 +1,4 @@
-
+//same cod as last asingment
 function log()
 {
 const Firstname = document.getElementById("Firstname") .value;
